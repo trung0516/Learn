@@ -10,7 +10,6 @@ public class vitrichandautien {
         outputResult(evenIndex);
     }
 
-    // Hàm để nhập mảng từ người dùng
     public static int[] inputArray() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập số lượng phần tử của mảng: ");
@@ -24,8 +23,6 @@ public class vitrichandautien {
         }
         return array;
     }
-
-    // Hàm tìm vị trí của giá trị chẵn đầu tiên trong mảng
     public static int findFirstEvenIndex(int[] array) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 == 0) {  // Kiểm tra nếu phần tử là số chẵn
@@ -34,8 +31,6 @@ public class vitrichandautien {
         }
         return -1;  // Trả về -1 nếu không có giá trị chẵn
     }
-
-    // Hàm xuất kết quả
     public static void outputResult(int index) {
         if (index == -1) {
             System.out.println("Mảng không có giá trị chẵn.");
